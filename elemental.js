@@ -51,7 +51,7 @@
 			var temp = document.createElement('div');
 			temp.innerHTML = Object.values(pusher)[i];
 			var name = Object.keys(pusher)[i];
-			var element = temp.firstElementChild;
+			var element = temp;
 			if(typeof element == "object" && element != null) {
 				element.setAttribute("elemental-rid", btoa(Date.now()));
 			}
